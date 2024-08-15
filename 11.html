@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            position: relative;
+             z-index: 1;
+             border: dashed;
+            height: 10em;
+            margin-bottom: 3em;
+            margin-top: 2em;
+            background-color: green;
+            width: 30%;
+        }
+.box2 {
+  position: absolute;
+  z-index: 3; 
+  background: orangered;
+  width: 30%;
+  left: 60px;
+  top: 4em;
+  height: 10em;
+}
+    </style>
+</head>
+<body>
+    <p>The z-index property specifies the stack order of an element.
+<br><br>
+        Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements).</p>
+
+        <div class="wrapper">
+            <div class="box1"> box 1</div>
+            <div class="box2"> box 2</div>
+          </div>
+</body>
+</html>

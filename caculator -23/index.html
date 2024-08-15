@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/cal.js"></script>
+</head>
+<body>
+    <div class="calculator-app">
+        <table class="table">
+            <tr>
+                <td>
+                    <input type="text" id="result" placeholder="0" class="form-control border border-0" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="button" id="btn" class="btn btn-md bg-white shadow" value="%" onclick="return getValues(this.value)">%</button>
+                    <button type="button" id="btn" class="btn btn-md bg-white shadow" onclick="bckSlice()">CE</button>
+                    <button type="button" id="btn" class="btn btn-md bg-white shadow" onclick="clr()">C</button>
+                    <button type="button" id="btn" class="btn btn-md bg-white shadow" >&times;</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                <button type="button" class="btn btn-md bg-white shadow" id="btn" onclick="return getValues(this.value)" value="1/x">1/x</button>
+                <button type="button" class="btn btn-md bg-white shadow" id="btn">x<sup>2</sup></button>
+                <button type="button" class="btn btn-md bg-white shadow" id="btn"onclick="return getValues(this.value)" value="2√x" >2√x</button>
+                <button type="button" class="btn btn-md bg-white shadow" id="btn" onclick="return getValues(this.value)" value="/">/</button></td>
+            </tr>
+
+            <tr>
+                <td>
+                <button type="button" class="btn btn-md bg-white shadow" id="btn"  onclick="return getValues(this.value)" value="7">7</button>
+                <button type="button" class="btn btn-md bg-white shadow" id="btn"  onclick="return getValues(this.value)" value="8">8</button>
+                <button type="button" class="btn btn-md bg-white shadow" id="btn"  onclick="return getValues(this.value)" value="9">9</button>
+                <button type="button" class="btn btn-md bg-white shadow" id="btn"  onclick="return getValues(this.value)" value="*">*</button></td>
+            </tr>
+
+            <tr>
+                <td>
+                <button type="button" class="btn btn-md bg-white shadow" id="btn"  onclick="return getValues(this.value)" value="4">4</button>
+                <button type="button" class="btn btn-md bg-white shadow" id="btn"  onclick="return getValues(this.value)" value="5">5</button>
+                <button type="button" class="btn btn-md bg-white shadow" id="btn"  onclick="return getValues(this.value)" value="6">6</button>
+                <button type="button" class="btn btn-md bg-white shadow" id="btn"  onclick="return getValues(this.value)" value="-">-</button></td>
+            </tr>
+
+            <tr>
+                <td>
+                <button type="button" class="btn btn-md bg-white shadow" id="btn" value="1" onclick="return getValues(this.value)">1</button>
+                <button type="button" class="btn btn-md bg-white shadow" id="btn" value="2" onclick="return getValues(this.value)">2</button>
+                <button type="button" class="btn btn-md bg-white shadow" id="btn" value="3" onclick="return getValues(this.value)">3</button>
+                <button type="button" class="btn btn-md bg-white shadow" id="btn" value="+" onclick="return getValues(this.value)">+</button>
+                    </td>
+                    </tr>
+
+               <tr>
+                 <td>
+                     <button type="button" class="btn btn-md bg-white shadow" id="btn" value="+-/" onclick="return getValues(this.value)" value="+-/">+-/</button>
+                    <button type="button" class="btn btn-md bg-white shadow" id="btn" value="0" onclick="return getValues(this.value)" value="0">0</button>
+                    <button type="button" class="btn btn-md bg-white shadow" id="btn" value="." onclick="return getValues(this.value)" value=".">.</button>
+                    <button type="button" class="btn btn-md bg-primary text-white  shadow" id="btn" onclick="finalResult()">=</button>
+                </td>
+                </tr>
+                
+                
+                <script>
+
+
+
+
